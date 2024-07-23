@@ -1,5 +1,5 @@
 import axios from "axios";
-const axiosInstance=axios.create({baseURL:"http://localhost:5000/api/v1"})
+const axiosInstance=axios.create({baseURL:"https://blog-post-application-git-main-charles--dev-projects.vercel.app/api/v1"})
 axiosInstance.interceptors.request.use((req)=>{
     const stringBlogData=localStorage.getItem("blogData")
     if(stringBlogData){
