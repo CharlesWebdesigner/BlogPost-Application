@@ -12,7 +12,7 @@ const {notFound}=require('./controllers')
 connectMongodb()
 
 const frontedUrl=process.env.Fronted_Url
-app.use(cors({origin:frontedUrl}))
+app.use(cors({origin:[frontedUrl, "https://blog-post-application-frontend-git-main-charles--dev-projects.vercel.app"]}))
 
 app.use(express.json({limit:"500mb"}))
 app.use(bodyParser.urlencoded({limit:"500mb",extended:true}))
