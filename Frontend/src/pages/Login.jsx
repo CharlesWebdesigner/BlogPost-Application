@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "../utils/axiosinstance";
 import { toast } from "react-toastify";
 import loginValidator from "../validators/loginValidators";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 const Login=()=>{
     const initialFormData={email:"",password:""}
     const initialFormError={email:"",password:""} 
@@ -58,6 +58,7 @@ const Login=()=>{
                     <input type="password" placeholder="******" name="password" className="form-control" value={formData.password} onChange={handleChange}/>
                     {formError.password && <p className="error">{formError.password}</p>}
                 </div>
+                <Link className="forgot-password" to="/forgot-password">Forgot password</Link>
                 <div className="form-group">
                     <input type="submit" className="button" value={`${loading ? "Logging...." : "Login"}`} />
                 </div>
