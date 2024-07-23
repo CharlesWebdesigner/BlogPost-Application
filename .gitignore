@@ -1,8 +1,8 @@
-/Backend/env
+/Backend/.env
 /Backend/node_modules
 /Frontend/node_modules
  Frontend/.gitignore
 node_modules
-env
+.env
 .gitignore
 gitignore
