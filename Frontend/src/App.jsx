@@ -18,6 +18,7 @@ import DetailPost from "./pages/post/DetailPost";
 import UpdatePost from "./pages/post/UpdatePost";
 import VerifyUser from "./pages/VerifyUser";
 import ForgotPassword from "./pages/ForgotPassword";
+import NotFound from "./pages/NotFound";
 function App(){
   return(
   <>
@@ -40,6 +41,7 @@ function App(){
       <Route path="login" element={<Login/>}/>
       <Route path="forgot-password" element={<ForgotPassword/>}/>
       </Route>
+      <Route path="*" element={<NotFound/>}/>
     </Routes>
     <ToastContainer/>
   </>
